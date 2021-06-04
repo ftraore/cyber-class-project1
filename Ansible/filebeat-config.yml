@@ -1,0 +1,145 @@
+SOME SECTION SHOWING UPDATES MADE TO THE FILEBEAT-CONFIG.YML
+
+######################## Filebeat Configuration ############################
+# This file is a full configuration example documenting all non-deprecated
+# options in comments. For a shorter configuration example, that contains only
+# the most common options, please see filebeat.yml in the same directory.
+#
+# You can find the full configuration reference here:
+# https://www.elastic.co/guide/en/beats/filebeat/index.html
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+
+#==========================  Modules configuration =============================
+filebeat.modules:
+
+
+#---------------------------- Elasticsearch Module ----------------------------
+- module: elasticsearch
+  # Server log
+  server:
+    enabled: true
+
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  gc:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  audit:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+  slowlog:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+ deprecation:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+    # Filebeat will choose the paths depending on your OS.
+    #var.paths:
+
+#------------------------------- Haproxy Module -------------------------------
+- module: haproxy
+  # All logs
+  log:
+    enabled: true
+
+#-------------------------------- Kibana Module --------------------------------
+- module: kibana
+  # All logs
+  log:
+    enabled: true
+
+#--------------------------------- Nats Module ---------------------------------
+- module: nats
+  # All logs
+  log:
+    enabled: true
+
+#------------------------------- Osquery Module -------------------------------
+- module: osquery
+  result:
+    enabled: true
+
+#----------------------------- Google Santa Module -----------------------------
+- module: santa
+  log:
+    enabled: true
+    # Set custom paths for the log files. If left empty,
+
+#=========================== Filebeat inputs =============================
+
+# List of inputs to fetch data.
+filebeat.inputs:
+# Each - is an input. Most options can be set at the input level, so
+# you can use different inputs for various configurations.
+# Below are the input specific configurations.
+
+# Type of the files. Based on this the way the file is read is decided.
+# The different types cannot be mixed in one input
+#
+# Possible options are:
+# * log: Reads every line of the log file (default)
+# * stdin: Reads the standard in
+
+#------------------------------ Log input --------------------------------
+- type: log
+
+  # Change to true to enable this input configuration.
+  enabled: false
+
+  # Paths that should be crawled and fetched. Glob based paths.
+  # To fetch all ".log" files from a specific level of subdirectories
+  # /var/log/*/*.log can be used.
+  # For each file found under this path, a harvester is started.
+  # Make sure not file is defined twice as this can lead to unexpected behaviour.
+  paths:
+    - /var/log/*.log
+    #- c:\programdata\elasticsearch\logs\*
+
+#================================ Outputs ======================================
+
+# Configure what output to use when sending the data collected by the beat.
+
+#-------------------------- Elasticsearch output -------------------------------
+output.elasticsearch:
+  # Boolean flag to enable or disable the output module.
+  #enabled: true
+
+  # Array of hosts to connect to.
+  # Scheme and port can be left out and will be set to the default (http and 9200)
+  # In case you specify and additional path, the scheme is required: http://localhost:9200/path
+  # IPv6 addresses should always be defined as: https://[2001:db8::1]:9200
+  hosts: ["10.1.0.4:9200"]
+  username: "elastic"
+  password: "changeme" # TODO: Change this to the password you set
+
+
+#============================== Template =====================================
+
+# Elasticsearch template settings
+setup.template.settings:
+
+  # A dictionary of settings to place into the settings.index dictionary
+
+#============================== Kibana =====================================
+
+setup.kibana:
+  host: "10.1.0.4:5601"
+
+#================================ Logging ======================================
+# Logging to rotating files. Set logging.to_files to false to disable logging to
+# files.
+logging.to_files: true
+logging.files:
+  # Configure the path where the logs are written. The default is the logs directory
