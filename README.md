@@ -15,7 +15,8 @@ This document contains the following details:
 
 - Beats in Use
 
-Filebeat-config.yml: ![data](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/filebeat-config.yml)
+Filebeat-config.yml: ![data] (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/filebeat-config.yml)
+
 Filebeat-playbook.yml: ![data] (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/filebeat-playbook.yml)
 Metricbeat-config.yml
 Metricbeat-playbook.yml
