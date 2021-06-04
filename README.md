@@ -1,7 +1,8 @@
 ### Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
-![TODO: Update the path with the name of your diagram](/Diagrams/Diagram.png)
+
+![image](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Diagram.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as filebeat.
 - Enter the playbook file. install-elk.yml 
@@ -19,6 +20,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 - Load balancing ensures that the application will be highly available, efficient, performant, in addition to restricting access to the network.
 - What aspect of security do load balancers protect? Load balancers protect and contribute to the availability and resiliency aspect of security of the CIA triad.
 - What is the advantage of a jump box? A jump box is a secure computer that all admins first connect to before launching any administrative task or use as an origination point to connect to other servers or untrusted environments. It is a Secure Administrative Workstation (SAW).
+
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the monitoring and system security.
 - What does Filebeat watch for? Filebeat watches for log files or location for log events.
 - What does Metricbeat record? Metricbeat records the metrics and statistics.
@@ -66,14 +68,23 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - What is the main advantage of automating configuration with Ansible? The main advantage of automating configuration with Ansible is saving time and the ease of use. The use of one single command with the playbook allow us with the playbook to configure multiple machines at the same and do more. 
 The playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+
 •	Install: docker.io
+
 •	Install: python3-pip
+
 •	Install: docker module
+
 •	Increase virtual memory: sysctl -w vm.max_map_count=262144
+
 •	Download and launch a docker elk container
+
 •	Enable service docker on boot docker_container
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+
+![image](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Run%20docker%20ps.PNG)
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - Web-1/IP: 10.0.0.5, Web-2/IP: 10.0.0.6, Web-3/IP: 10.0.0.7
