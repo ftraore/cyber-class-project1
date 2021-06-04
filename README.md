@@ -12,6 +12,9 @@ This document contains the following details:
 - Access Policies
 - ELK Configuration
 - Beats in Use
+
+![data](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/filebeat-config.yml)
+
 - Machines Being Monitored
 - How to Use the Ansible Build
 
