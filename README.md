@@ -21,7 +21,7 @@ Filebeat-playbook.yml: ![data] (https://github.com/ftraore/cyber-class-project1/
 
 ![Metricbeat-config.yml:] (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/metricbeat-config.yml)
 
-![Metricbeat-playbook.yml:] (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/metricbeat-playbook.yml)
+metricbeat-playbook.yml: (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/metricbeat-playbook.yml)
 
 - Machines Being Monitored
 - How to Use the Ansible Build
