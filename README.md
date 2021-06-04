@@ -120,15 +120,25 @@ nano /etc/ansible/ filebeat-config.yml Scroll to line #1106 and replace the IP a
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc
 
 From host:
+
 . ssh [username]@[Jump-Box-Public-IP]
+
 . sudo docker start [ansible container]
+
 . sudo docker attach [ansible container]
+
 . cd /etc/ansible/roles or where the playbook is located
+
 . ansible-playbook install-elk.yml
+
 . ssh [username]@[Elkserver_Private_IP]
+
 . sudo snap install nmap (for first user)
+
 . nmap -Pn 80 [Elkserver_Public_IP]
+
 . sudo docker ps
+
 . curl http://localhost:5601/app/kibana
 
 ### Additional files
