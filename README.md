@@ -7,7 +7,7 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as filebeat.
 - Enter the playbook file. install-elk.yml
  
-![install-elk.yml]![(https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/install-elk.yml)]
+![install-elk.yml](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -130,4 +130,16 @@ From host:
 . nmap -Pn 80 [Elkserver_Public_IP]
 . sudo docker ps
 . curl http://localhost:5601/app/kibana
+
+### Additional files
+
+- Topology
+
+![image](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Topology.PNG)
+
+- Other updated files
+
+  ![ansible.cfg](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/ansible.cfg)
+  
+  ![hosts.cfg](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/hosts.cfg)
 
