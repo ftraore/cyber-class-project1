@@ -20,6 +20,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 - Load balancing ensures that the application will be highly available, efficient, performant, in addition to restricting access to the network.
 - What aspect of security do load balancers protect? Load balancers protect and contribute to the availability and resiliency aspect of security of the CIA triad.
 - What is the advantage of a jump box? A jump box is a secure computer that all admins first connect to before launching any administrative task or use as an origination point to connect to other servers or untrusted environments. It is a Secure Administrative Workstation (SAW).
+
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the monitoring and system security.
 - What does Filebeat watch for? Filebeat watches for log files or location for log events.
 - What does Metricbeat record? Metricbeat records the metrics and statistics.
