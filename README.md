@@ -4,8 +4,6 @@ The files in this repository were used to configure the network depicted below.
 
 ![image](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Diagram.PNG)
 
-![TODO: Update the path with the name of your diagram](/Diagrams/Diagram.png)
-
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as filebeat.
 - Enter the playbook file. install-elk.yml 
 
@@ -69,12 +67,19 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - What is the main advantage of automating configuration with Ansible? The main advantage of automating configuration with Ansible is saving time and the ease of use. The use of one single command with the playbook allow us with the playbook to configure multiple machines at the same and do more. 
 The playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+
 •	Install: docker.io
+
 •	Install: python3-pip
+
 •	Install: docker module
+
 •	Increase virtual memory: sysctl -w vm.max_map_count=262144
+
 •	Download and launch a docker elk container
+
 •	Enable service docker on boot docker_container
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![image](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Run%20docker%20ps.PNG)
