@@ -146,7 +146,7 @@ From host:
 
 - Topology
 
-![image](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Topology.PNG)
+![(https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Topology.PNG)]
 
 - Other updated files
 
