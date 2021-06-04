@@ -76,7 +76,9 @@ The playbook implements the following tasks:
 •	Download and launch a docker elk container
 •	Enable service docker on boot docker_container
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+
+![image](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Run%20docker%20ps.PNG)
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - Web-1/IP: 10.0.0.5, Web-2/IP: 10.0.0.6, Web-3/IP: 10.0.0.7
