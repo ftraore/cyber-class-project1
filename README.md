@@ -5,8 +5,9 @@ The files in this repository were used to configure the network depicted below.
 ![image](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Diagram.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as filebeat.
-- Enter the playbook file. install-elk.yml 
-![install-elk.yml:] (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/install-elk.yml) 
+- Enter the playbook file. install-elk.yml
+ 
+install-elk.yml: ![data] (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/install-elk.yml) 
 
 This document contains the following details:
 - Description of the Topology
@@ -21,7 +22,7 @@ Filebeat-playbook.yml: ![data] (https://github.com/ftraore/cyber-class-project1/
 
 ![Metricbeat-config.yml:] (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/metricbeat-config.yml)
 
-metricbeat-playbook.yml: (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/metricbeat-playbook.yml)
+metricbeat-playbook.yml:  (https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/metricbeat-playbook.yml)
 
 - Machines Being Monitored
 - How to Use the Ansible Build
