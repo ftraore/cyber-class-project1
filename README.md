@@ -153,4 +153,8 @@ From host:
   ![ansible.cfg](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/ansible.cfg)
   
   ![hosts.cfg](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/hosts.cfg)
+  
+ - Kibana
+
+  ![Exploring Kibana](https://github.com/ftraore/cyber-class-project1/blob/main/Exploring%20Kibana.docx)
 
