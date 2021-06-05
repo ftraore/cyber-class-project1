@@ -5,8 +5,9 @@ The files in this repository were used to configure the network depicted below.
 ![image](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Diagram.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as filebeat.
-- Enter the playbook file. install-elk.yml 
-install-elk.yml: 
+- Enter the playbook file. install-elk.yml
+ 
+![install-elk.yml](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -15,10 +16,13 @@ This document contains the following details:
 
 - Beats in Use
 
-Filebeat-config.yml: ![data](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/filebeat-config.yml)
-Filebeat-playbook.yml
-Metricbeat-config.yml
-Metricbeat-playbook.yml
+![filebeat-config.yml](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/filebeat-config.yml)
+
+![filebeat-playbook.yml](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/filebeat-playbook.yml)
+
+![metricbeat-config.yml](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/metricbeat-config.yml)
+
+![metricbeat-playbook.yml](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/metricbeat-playbook.yml)
 
 - Machines Being Monitored
 - How to Use the Ansible Build
@@ -113,17 +117,40 @@ SSH into the control node and follow the steps below:
 nano /etc/ansible/ filebeat-config.yml Scroll to line #1106 and replace the IP address with the IP address of your ELK machine and scroll to line #1806 and replace the IP address with the IP address of your ELK machine.
 
 - Which URL do you navigate to in order to check that the ELK server is running? http://[your.VM.IP]:5601/app/kibana
+
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc
 
 From host:
+
 . ssh [username]@[Jump-Box-Public-IP]
+
 . sudo docker start [ansible container]
+
 . sudo docker attach [ansible container]
+
 . cd /etc/ansible/roles or where the playbook is located
+
 . ansible-playbook install-elk.yml
+
 . ssh [username]@[Elkserver_Private_IP]
+
 . sudo snap install nmap (for first user)
+
 . nmap -Pn 80 [Elkserver_Public_IP]
+
 . sudo docker ps
+
 . curl http://localhost:5601/app/kibana
+
+### Additional files
+
+- Topology
+
+![topology](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Topology.PNG)
+
+- Other updated files
+
+  ![ansible.cfg](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/ansible.cfg)
+  
+  ![hosts.cfg](https://github.com/ftraore/cyber-class-project1/blob/main/Ansible/hosts.cfg)
 
