@@ -146,7 +146,7 @@ From host:
 
 - Topology
 
-![topology](https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Topology.PNG)
+![topology:] (https://github.com/ftraore/cyber-class-project1/blob/main/Diagrams/Topology.PNG)
 
 - Other updated files
 
@@ -156,5 +156,5 @@ From host:
   
  - Kibana
 
-  ![Exploring Kibana](https://github.com/ftraore/cyber-class-project1/blob/main/Exploring%20Kibana.docx)
+   ![Exploring Kibana](https://github.com/ftraore/cyber-class-project1/blob/main/Exploring%20Kibana.docx)
 
